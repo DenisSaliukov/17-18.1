@@ -13,6 +13,173 @@ body {
 	font-family: 'Helvetica Neue';
 }
 
+// ------------------------------------------------
+.header {
+	// .header__body
+
+	&__body {
+		position: relative;
+	}
+	&__content {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		height: 90px;
+		align-items: center;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+		width: 100%;
+	}
+
+	// .header__logo
+
+	&__logo {
+	}
+
+	// .header__menu
+
+	&__menu {
+		display: flex;
+		padding-right: 10px;
+	}
+
+	// .header__item
+
+	&__item {
+		&:nth-child(1) {
+			margin-right: 45px;
+		}
+		&:nth-child(2) {
+			margin-right: 55px;
+		}
+		&:nth-child(3) {
+			margin-right: 36px;
+		}
+		&:hover {
+			color: rgb(52, 199, 89);
+			transition-duration: 0.3s;
+			transition-delay: 0.1s;
+		}
+	}
+}
+
+// ------------------------------------------------
+.healthy {
+	width: 100%;
+	background: url('../images/placeholder.png') top / cover no-repeat,
+		linear-gradient(180deg, rgba(26, 26, 26, 0), rgb(26, 26, 26) 100%),
+		rgba(33, 33, 33, 0.5);
+	// .healthy__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 170px;
+		padding: 170px 112px 0px 112px;
+	}
+
+	// .healthy__title
+
+	&__title {
+		color: $main-white;
+		font-size: 72px;
+		font-weight: 300;
+		line-height: 1.2;
+		letter-spacing: 10%;
+		text-transform: capitalize;
+		margin-bottom: 16px;
+		text-align: center;
+		& span {
+			font-weight: 600;
+		}
+	}
+
+	// .healthy__text
+
+	&__text {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 16px;
+		font-weight: 100;
+		line-height: 26px;
+		letter-spacing: -0.2px;
+		max-width: 595px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	// .healthy__btn
+
+	&__btn {
+		border-radius: 43px;
+		background: rgb(52, 199, 89);
+		color: rgb(26, 26, 26);
+		font-size: 18px;
+		font-weight: 900;
+		line-height: 22px;
+		letter-spacing: 20%;
+		padding: 25px 60px;
+		margin-bottom: 70px;
+	}
+
+	// .healthy__about
+
+	&__about {
+	}
+}
+.about-healthy {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	// .about-healthy__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		& img {
+			margin-bottom: 13px;
+		}
+	}
+
+	// .about-healthy__data
+
+	&__data {
+		color: $main-white;
+		font-size: 16px;
+		font-weight: 100;
+		line-height: 30px;
+		letter-spacing: 0px;
+		& a {
+			color: $main-white;
+			font-size: 16px;
+			font-weight: 100;
+			line-height: 30px;
+			letter-spacing: 0px;
+		}
+	}
+
+	// .about-healthy__explain
+
+	&__explain {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: 0px;
+		margin-bottom: 401px;
+		& a {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: 0px;
+		}
+	}
+}
+.about-healthy__phone {
+}
+// ------------------------------------------------
+
 .dishes {
 	padding-top: 90px;
 
@@ -183,24 +350,28 @@ body {
 	// .dishes__btn
 
 	&__btn {
-		color: rgba(255, 255, 255, 0.5);
-		font-size: 10px;
-		font-weight: 900;
-		line-height: 40px;
-		letter-spacing: 20%;
-		text-align: center;
-		text-transform: uppercase;
-		border: 2px solid rgb(48, 48, 48);
-		border-radius: 30px;
-		background: rgb(38, 38, 38);
-		padding: 0 32px;
 		// @media (max-width: 991.98px) {
 		// 	width: 100%;
 		// }
-		&--green {
-			background: rgb(52, 199, 89);
-			border-color: rgb(52, 199, 89);
-		}
+	}
+}
+
+.button {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 10px;
+	font-weight: 900;
+	line-height: 36px;
+	letter-spacing: 20%;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid rgb(48, 48, 48);
+	border-radius: 30px;
+	background: rgb(38, 38, 38);
+	padding: 0 29.5px;
+	&--green {
+		background: rgb(52, 199, 89);
+		border-color: rgb(52, 199, 89);
+		color: rgb(37, 37, 37);
 	}
 }
 
