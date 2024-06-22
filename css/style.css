@@ -99,6 +99,11 @@ body {
   margin: 0 -15px;
   row-gap: 30px;
 }
+@media (max-width: 991.98px) {
+  .dishes__items {
+    margin: 0 -7.5px;
+  }
+}
 @media (max-width: 767.98px) {
   .dishes__items {
     margin: 0 -10px;
@@ -115,6 +120,11 @@ body {
 @media (min-width: 1140px) {
   .dishes__item {
     max-width: 380px;
+  }
+}
+@media (max-width: 991.98px) {
+  .dishes__item {
+    padding: 0 7.5px;
   }
 }
 @media (max-width: 767.98px) {
@@ -222,14 +232,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 991.98px) {
-  .dishes__bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 .dishes__stars img {
   width: 100%;
 }
@@ -253,11 +255,6 @@ body {
   border-radius: 30px;
   background: rgb(38, 38, 38);
   padding: 0 32px;
-}
-@media (max-width: 991.98px) {
-  .dishes__btn {
-    width: 100%;
-  }
 }
 .dishes__btn--green {
   background: rgb(52, 199, 89);
@@ -301,6 +298,20 @@ body {
   margin: 0 -15px;
   position: relative;
 }
+@media (max-width: 991.98px) {
+  .recipes__block {
+    margin: 0 -7.5px;
+  }
+}
+@media (max-width: 767.98px) {
+  .recipes__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+  }
+}
 .recipes__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,11 +326,21 @@ body {
   padding: 0 15px;
   position: relative;
 }
+@media (max-width: 991.98px) {
+  .recipes__item {
+    padding: 0 7.5px;
+  }
+}
 .recipes__item--left {
   text-align: center;
 }
 .recipes__item--right {
   row-gap: 30px;
+}
+@media (max-width: 991.98px) {
+  .recipes__item--right {
+    row-gap: 15px;
+  }
 }
 .recipes__link {
   display: -webkit-box;
@@ -361,6 +382,7 @@ body {
           align-items: center;
   padding-top: 60px;
   padding-bottom: 62px;
+  border-radius: 6px;
 }
 .recipes__btn {
   margin-bottom: 65px;
@@ -475,11 +497,31 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 991.98px) {
+  .inner-box__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+  }
+}
 .inner-box__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+}
+@media (max-width: 991.98px) {
+  .inner-box__left {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.inner-box__btn {
+  display: inline-block;
 }
 .inner-box__date {
   color: rgb(179, 179, 179);
@@ -499,4 +541,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 29px;
+}
+@media (max-width: 991.98px) {
+  .inner-box__right {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }

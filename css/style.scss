@@ -39,6 +39,9 @@ body {
 		flex-wrap: wrap;
 		margin: 0 -15px;
 		row-gap: 30px;
+		@media (max-width: 991.98px) {
+			margin: 0 -7.5px;
+		}
 		@media (max-width: 767.98px) {
 			margin: 0 -10px;
 			row-gap: 20px;
@@ -53,6 +56,9 @@ body {
 		min-width: 290px;
 		@media (min-width: 1140px) {
 			max-width: 380px;
+		}
+		@media (max-width: 991.98px) {
+			padding: 0 7.5px;
 		}
 		@media (max-width: 767.98px) {
 			padding: 0 10px;
@@ -152,9 +158,9 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		@media (max-width: 991.98px) {
-			flex-direction: column;
-		}
+		// @media (max-width: 991.98px) {
+		// 	flex-direction: column;
+		// }
 	}
 
 	// .dishes__stars
@@ -188,9 +194,9 @@ body {
 		border-radius: 30px;
 		background: rgb(38, 38, 38);
 		padding: 0 32px;
-		@media (max-width: 991.98px) {
-			width: 100%;
-		}
+		// @media (max-width: 991.98px) {
+		// 	width: 100%;
+		// }
 		&--green {
 			background: rgb(52, 199, 89);
 			border-color: rgb(52, 199, 89);
@@ -239,6 +245,13 @@ body {
 		display: flex;
 		margin: 0 -15px;
 		position: relative;
+		@media (max-width: 991.98px) {
+			margin: 0 -7.5px;
+		}
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+			row-gap: 15px;
+		}
 	}
 
 	// .recipes__left-item
@@ -249,6 +262,9 @@ body {
 		flex: 0 1 50%;
 		padding: 0 15px;
 		position: relative;
+		@media (max-width: 991.98px) {
+			padding: 0 7.5px;
+		}
 
 		&--left {
 			// margin-left: 15px;
@@ -256,6 +272,9 @@ body {
 		}
 		&--right {
 			row-gap: 30px;
+			@media (max-width: 991.98px) {
+				row-gap: 15px;
+			}
 		}
 	}
 
@@ -283,6 +302,7 @@ body {
 		align-items: center;
 		padding-top: 60px;
 		padding-bottom: 62px;
+		border-radius: 6px;
 	}
 
 	// .recipes__title
@@ -413,6 +433,10 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+			row-gap: 15px;
+		}
 	}
 
 	// .inner-box__left
@@ -420,11 +444,16 @@ body {
 	&__left {
 		display: flex;
 		gap: 15px;
+		@media (max-width: 991.98px) {
+			width: 100%;
+			justify-content: space-between;
+		}
 	}
 
 	// .inner-box__btn
 
 	&__btn {
+		display: inline-block;
 	}
 
 	// .inner-box__date
@@ -448,5 +477,9 @@ body {
 	&__right {
 		display: flex;
 		gap: 29px;
+		@media (max-width: 991.98px) {
+			width: 100%;
+			justify-content: space-between;
+		}
 	}
 }
