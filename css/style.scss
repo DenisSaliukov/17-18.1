@@ -33,6 +33,11 @@ body {
 	// .header__logo
 
 	&__logo {
+		position: relative;
+		bottom: 4px;
+		@media (max-width: 479.98px) {
+			bottom: 0;
+		}
 	}
 
 	// .header__menu
@@ -40,19 +45,47 @@ body {
 	&__menu {
 		display: flex;
 		padding-right: 10px;
+		@media (max-width: 767.98px) {
+			justify-content: space-between;
+			flex: 0 1 250px;
+			margin-left: 30px;
+		}
+		@media (max-width: 479.98px) {
+			display: block;
+			flex: 0 1 auto;
+		}
 	}
 
 	// .header__item
 
 	&__item {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 90px;
+		letter-spacing: 0px;
+		@media (max-width: 767.98px) {
+			font-size: 12px;
+		}
+		@media (max-width: 479.98px) {
+			line-height: 18px;
+		}
 		&:nth-child(1) {
 			margin-right: 45px;
+			@media (max-width: 767.98px) {
+				margin-right: 0;
+			}
 		}
 		&:nth-child(2) {
 			margin-right: 55px;
+			@media (max-width: 767.98px) {
+				margin-right: 0;
+			}
 		}
 		&:nth-child(3) {
 			margin-right: 36px;
+			@media (max-width: 767.98px) {
+				margin-right: 0;
+			}
 		}
 		&:hover {
 			color: rgb(52, 199, 89);
@@ -68,14 +101,18 @@ body {
 	background: url('../images/placeholder.png') top / cover no-repeat,
 		linear-gradient(180deg, rgba(26, 26, 26, 0), rgb(26, 26, 26) 100%),
 		rgba(33, 33, 33, 0.5);
-	// .healthy__body
-
 	&__body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 170px;
-		padding: 170px 112px 0px 112px;
+		padding: 170px 112px 161px 112px;
+		@media (max-width: 991.98px) {
+			padding: 150px 10px 50px 10px;
+		}
+		@media (max-width: 767.98px) {
+			padding: 115px 10px 0px 10px;
+		}
 	}
 
 	// .healthy__title
@@ -89,6 +126,14 @@ body {
 		text-transform: capitalize;
 		margin-bottom: 16px;
 		text-align: center;
+		@media (max-width: 1140px) {
+			font-size: 65px;
+		}
+		@media (max-width: 767.98px) {
+			font-size: 40px;
+			margin-bottom: 10px;
+		}
+
 		& span {
 			font-weight: 600;
 		}
@@ -105,8 +150,19 @@ body {
 		max-width: 595px;
 		text-align: center;
 		margin-bottom: 40px;
+		@media (max-width: 767.98px) {
+			font-size: 13px;
+			margin-bottom: 0;
+		}
 	}
-
+	&__button {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		margin-bottom: 70px;
+		@media (max-width: 767.98px) {
+			margin-bottom: 40px;
+		}
+	}
 	// .healthy__btn
 
 	&__btn {
@@ -118,13 +174,19 @@ body {
 		line-height: 22px;
 		letter-spacing: 20%;
 		padding: 25px 60px;
-		margin-bottom: 70px;
+
+		text-align: center;
+		@media (max-width: 767.98px) {
+			padding: 10px 40px;
+			font-size: 14px;
+			width: 100%;
+		}
 		&:hover {
 			color: rgb(219, 213, 213);
 			background: rgb(32, 173, 68);
-			transition-duration: 0.3s;
 			outline: 1px solid rgb(32, 173, 68);
 			outline-offset: 3px;
+			transition: all 0.5s ease 0.2s;
 		}
 	}
 
@@ -137,12 +199,19 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	// .about-healthy__item
-
+	flex-wrap: wrap;
+	@media (max-width: 479.98px) {
+		flex-direction: column;
+		row-gap: 35px;
+	}
 	&__item {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex: 0 1 33.333%;
+		@media (max-width: 767.98px) {
+			flex: 0 1 auto;
+		}
 		& img {
 			margin-bottom: 13px;
 		}
@@ -156,12 +225,20 @@ body {
 		font-weight: 100;
 		line-height: 30px;
 		letter-spacing: 0px;
+		text-align: center;
+		flex: 1 1 33.333%;
+		@media (max-width: 767.98px) {
+			font-size: 13px;
+		}
 		& a {
 			color: $main-white;
 			font-size: 16px;
 			font-weight: 100;
 			line-height: 30px;
 			letter-spacing: 0px;
+			@media (max-width: 767.98px) {
+				font-size: 13px;
+			}
 		}
 	}
 
@@ -171,15 +248,21 @@ body {
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 30px;
+		line-height: 2.1;
 		letter-spacing: 0px;
-		margin-bottom: 401px;
+		@media (max-width: 767.98px) {
+			font-size: 10px;
+			line-height: 2.1;
+		}
 		& a {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 30px;
 			letter-spacing: 0px;
+			@media (max-width: 767.98px) {
+				font-size: 10px;
+			}
 		}
 	}
 }
@@ -189,6 +272,9 @@ body {
 
 .dishes {
 	padding-top: 90px;
+	@media (max-width: 767.98px) {
+		padding-top: 45px;
+	}
 
 	margin-bottom: 60px;
 	// @include nameOfMixin();
