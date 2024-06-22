@@ -119,6 +119,13 @@ body {
 		letter-spacing: 20%;
 		padding: 25px 60px;
 		margin-bottom: 70px;
+		&:hover {
+			color: rgb(219, 213, 213);
+			background: rgb(32, 173, 68);
+			transition-duration: 0.3s;
+			outline: 1px solid rgb(32, 173, 68);
+			outline-offset: 3px;
+		}
 	}
 
 	// .healthy__about

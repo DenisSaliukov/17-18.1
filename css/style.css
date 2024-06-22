@@ -169,6 +169,14 @@ body {
   padding: 25px 60px;
   margin-bottom: 70px;
 }
+.healthy__btn:hover {
+  color: rgb(219, 213, 213);
+  background: rgb(32, 173, 68);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  outline: 1px solid rgb(32, 173, 68);
+  outline-offset: 3px;
+}
 .about-healthy {
   display: -webkit-box;
   display: -ms-flexbox;
