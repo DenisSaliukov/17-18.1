@@ -613,6 +613,13 @@ body {
 		padding: 24px 24px 42px 24px;
 		min-width: 212px;
 		@media (max-width: 767.98px) {
+			&:hover {
+				& .item-work__line {
+					background: rgb(25, 25, 25);
+					transition: all 0.3s linear 0.1s;
+					width: 100%;
+				}
+			}
 		}
 		&:hover {
 			background: rgb(52, 199, 89);
