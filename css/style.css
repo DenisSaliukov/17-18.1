@@ -290,9 +290,9 @@ body {
 }
 .healthy__btn:hover {
   color: rgb(219, 213, 213);
-  background: rgb(32, 173, 68);
-  outline: 1px solid rgb(32, 173, 68);
-  outline-offset: 3px;
+  background: rgba(32, 173, 67, 0.5);
+  outline: 3px solid rgb(32, 173, 67);
+  outline-offset: 1px;
   -webkit-transition: all 0.2s ease 0.1s;
   transition: all 0.2s ease 0.1s;
 }
