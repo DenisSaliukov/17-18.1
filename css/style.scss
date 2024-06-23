@@ -620,11 +620,12 @@ body {
 			transition: all 0.2s linear 0.05s;
 			& .item-work__title {
 				color: rgb(25, 25, 25);
-				transition: all 0.2s linear 0.1s;
+				transition: all 0.3s linear 0.1s;
 			}
 			& .item-work__line {
 				background: rgb(25, 25, 25);
-				transition: all 0.2s linear 0.1s;
+				transition: all 0.3s linear 0.1s;
+				width: 100%;
 			}
 			& .item-work__text {
 				color: rgb(25, 25, 25);
